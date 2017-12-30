@@ -58,6 +58,11 @@ PRODUCT_COPY_FILES += \
     vendor/zuk/ham/proprietary/vendor/firmware/cpp_firmware_v1_1_6.fw:system/vendor/firmware/cpp_firmware_v1_1_6.fw \
     vendor/zuk/ham/proprietary/vendor/firmware/cpp_firmware_v1_2_0.fw:system/vendor/firmware/cpp_firmware_v1_2_0.fw \
     vendor/zuk/ham/proprietary/vendor/firmware/cpp_firmware_v1_4_0.fw:system/vendor/firmware/cpp_firmware_v1_4_0.fw \
+    vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_ATT-VoLTE.mbn:system/etc/firmware/mbn_ota/mcfg_sw_ATT-VoLTE.mbn \
+    vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_CMCC_CSFB_DSDS_Commercial_Volte.mbn:system/etc/firmware/mbn_ota/mcfg_sw_CMCC_CSFB_DSDS_Commercial_Volte.mbn \
+    vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_CU_OpenMkt-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_CU_OpenMkt-Commercial.mbn \
+    vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_OEM_Overseas-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_OEM_Overseas-Commercial.mbn \
+    vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_Reliance-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_Reliance-Commercial.mbn\
     vendor/zuk/ham/proprietary/vendor/firmware/venus.b00:system/vendor/firmware/venus.b00 \
     vendor/zuk/ham/proprietary/vendor/firmware/venus.b01:system/vendor/firmware/venus.b01 \
     vendor/zuk/ham/proprietary/vendor/firmware/venus.b02:system/vendor/firmware/venus.b02 \
