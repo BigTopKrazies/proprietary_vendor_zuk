@@ -32,6 +32,7 @@ PRODUCT_COPY_FILES += \
     vendor/zuk/ham/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/zuk/ham/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
     vendor/zuk/ham/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
+    vendor/zuk/ham/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/zuk/ham/proprietary/vendor/bin/adsprpcd:system/vendor/bin/adsprpcd \
     vendor/zuk/ham/proprietary/vendor/bin/btnvtool:system/vendor/bin/btnvtool \
     vendor/zuk/ham/proprietary/vendor/bin/diag_mdlog:system/vendor/bin/diag_mdlog \
