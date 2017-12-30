@@ -62,7 +62,8 @@ PRODUCT_COPY_FILES += \
     vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_CMCC_CSFB_DSDS_Commercial_Volte.mbn:system/etc/firmware/mbn_ota/mcfg_sw_CMCC_CSFB_DSDS_Commercial_Volte.mbn \
     vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_CU_OpenMkt-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_CU_OpenMkt-Commercial.mbn \
     vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_OEM_Overseas-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_OEM_Overseas-Commercial.mbn \
-    vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_Reliance-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_Reliance-Commercial.mbn\
+    vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_Reliance-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_Reliance-Commercial.mbn \
+     vendor/oneplus/oneplus2/proprietary/etc/firmware/mbn_ota/mcfg_sw_TMO-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_TMO-Commercial.mbn \
     vendor/zuk/ham/proprietary/vendor/firmware/venus.b00:system/vendor/firmware/venus.b00 \
     vendor/zuk/ham/proprietary/vendor/firmware/venus.b01:system/vendor/firmware/venus.b01 \
     vendor/zuk/ham/proprietary/vendor/firmware/venus.b02:system/vendor/firmware/venus.b02 \
