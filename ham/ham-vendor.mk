@@ -18,8 +18,15 @@
 PRODUCT_COPY_FILES += \
     vendor/zuk/ham/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/zuk/ham/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
+    vendor/zuk/ham/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
+    vendor/zuk/ham/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/zuk/ham/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/zuk/ham/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/zuk/ham/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/zuk/ham/proprietary/etc/permissions/ims.xml:system/etc/permissions/ims.xml \
+    vendor/zuk/ham/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
+    vendor/zuk/ham/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+    vendor/zuk/ham/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/zuk/ham/proprietary/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
     vendor/zuk/ham/proprietary/etc/tfa98xx/TFA9890_N1B12_N1C3_v2.config:system/etc/tfa98xx/TFA9890_N1B12_N1C3_v2.config \
     vendor/zuk/ham/proprietary/etc/tfa98xx/TFA9890_N1C3_2_1_1.patch:system/etc/tfa98xx/TFA9890_N1C3_2_1_1.patch \
@@ -29,11 +36,51 @@ PRODUCT_COPY_FILES += \
     vendor/zuk/ham/proprietary/etc/tfa98xx/shenqi_music.preset:system/etc/tfa98xx/shenqi_music.preset \
     vendor/zuk/ham/proprietary/etc/tfa98xx/shenqi_speech.eq:system/etc/tfa98xx/shenqi_speech.eq \
     vendor/zuk/ham/proprietary/etc/tfa98xx/shenqi_speech.preset:system/etc/tfa98xx/shenqi_speech.preset \
-    vendor/zuk/ham/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
+    vendor/zuk/ham/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
+    vendor/zuk/ham/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
+    vendor/zuk/ham/proprietary/etc/cne/wqeclient/ATT/ATT_profile1.xml:system/etc/cne/wqeclient/ATT/ATT_profile1.xml \
+    vendor/zuk/ham/proprietary/etc/cne/wqeclient/ATT/ATT_profile2.xml:system/etc/cne/wqeclient/ATT/ATT_profile2.xml \
+    vendor/zuk/ham/proprietary/etc/cne/wqeclient/ATT/ATT_profile3.xml:system/etc/cne/wqeclient/ATT/ATT_profile3.xml \
+    vendor/zuk/ham/proprietary/etc/cne/wqeclient/ATT/ATT_profile4.xml:system/etc/cne/wqeclient/ATT/ATT_profile4.xml \
+    vendor/zuk/ham/proprietary/etc/cne/wqeclient/ROW/ROW_profile1.xml:system/etc/cne/wqeclient/ROW/ROW_profile1.xml \
+    vendor/zuk/ham/proprietary/etc/cne/wqeclient/ROW/ROW_profile2.xml:system/etc/cne/wqeclient/ROW/ROW_profile2.xml \
+    vendor/zuk/ham/proprietary/etc/cne/wqeclient/ROW/ROW_profile3.xml:system/etc/cne/wqeclient/ROW/ROW_profile3.xml \
+    vendor/zuk/ham/proprietary/etc/cne/wqeclient/ROW/ROW_profile4.xml:system/etc/cne/wqeclient/ROW/ROW_profile4.xml \
+    vendor/zuk/ham/proprietary/etc/cne/wqeclient/ROW/ROW_profile5.xml:system/etc/cne/wqeclient/ROW/ROW_profile5.xml \
+    vendor/zuk/ham/proprietary/etc/cne/wqeclient/VZW/VZW_profile1.xml:system/etc/cne/wqeclient/VZW/VZW_profile1.xml \
+    vendor/zuk/ham/proprietary/etc/cne/wqeclient/VZW/VZW_profile2.xml:system/etc/cne/wqeclient/VZW/VZW_profile2.xml \
+    vendor/zuk/ham/proprietary/etc/cne/wqeclient/VZW/VZW_profile3.xml:system/etc/cne/wqeclient/VZW/VZW_profile3.xml \
+    vendor/zuk/ham/proprietary/etc/cne/wqeclient/VZW/VZW_profile4.xml:system/etc/cne/wqeclient/VZW/VZW_profile4.xml \
+    vendor/zuk/ham/proprietary/etc/cne/wqeclient/VZW/VZW_profile5.xml:system/etc/cne/wqeclient/VZW/VZW_profile5.xml \
+    vendor/zuk/ham/proprietary/etc/cne/wqeclient/VZW/VZW_profile6.xml:system/etc/cne/wqeclient/VZW/VZW_profile6.xml \
+    vendor/zuk/ham/proprietary/etc/firmware/a330_pfp.fw:system/vendor/firmware/a330_pfp.fw \
+    vendor/zuk/ham/proprietary/etc/firmware/a330_pm4.fw:system/vendor/firmware/a330_pm4.fw \
+    vendor/zuk/ham/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
+    vendor/zuk/ham/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
+    vendor/zuk/ham/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
+    vendor/zuk/ham/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw \
+    vendor/zuk/ham/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
+    vendor/zuk/ham/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/zuk/ham/proprietary/etc/firmware/mbn_ota/mcfg_sw_ATT-VoLTE.mbn:system/etc/firmware/mbn_ota/mcfg_sw_ATT-VoLTE.mbn \
+    vendor/zuk/ham/proprietary/etc/firmware/mbn_ota/mcfg_sw_CMCC_CSFB_DSDS_Commercial_Volte.mbn:system/etc/firmware/mbn_ota/mcfg_sw_CMCC_CSFB_DSDS_Commercial_Volte.mbn \
+    vendor/zuk/ham/proprietary/etc/firmware/mbn_ota/mcfg_sw_CU_OpenMkt-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_CU_OpenMkt-Commercial.mbn \
+    vendor/zuk/ham/proprietary/etc/firmware/mbn_ota/mcfg_sw_OEM_Overseas-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_OEM_Overseas-Commercial.mbn \
+    vendor/zuk/ham/proprietary/etc/firmware/mbn_ota/mcfg_sw_Reliance-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_Reliance-Commercial.mbn \
+    vendor/zuk/ham/proprietary/etc/firmware/mbn_ota/mcfg_sw_TMO-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_TMO-Commercial.mbn \
+    vendor/zuk/ham/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
+    vendor/zuk/ham/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
+    vendor/zuk/ham/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \
+    vendor/zuk/ham/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03 \
+    vendor/zuk/ham/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
+    vendor/zuk/ham/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
+    vendor/zuk/ham/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
     vendor/zuk/ham/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
     vendor/zuk/ham/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/zuk/ham/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/zuk/ham/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
+    vendor/zuk/ham/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
+    vendor/zuk/ham/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
+    vendor/zuk/ham/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/zuk/ham/proprietary/vendor/bin/adsprpcd:system/vendor/bin/adsprpcd \
     vendor/zuk/ham/proprietary/vendor/bin/btnvtool:system/vendor/bin/btnvtool \
     vendor/zuk/ham/proprietary/vendor/bin/diag_mdlog:system/vendor/bin/diag_mdlog \
@@ -50,27 +97,14 @@ PRODUCT_COPY_FILES += \
     vendor/zuk/ham/proprietary/vendor/bin/rfs_access:system/vendor/bin/rfs_access \
     vendor/zuk/ham/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
     vendor/zuk/ham/proprietary/vendor/bin/sensors.qcom:system/vendor/bin/sensors.qcom \
+    vendor/zuk/ham/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/zuk/ham/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/zuk/ham/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
-    vendor/zuk/ham/proprietary/vendor/firmware/a330_pfp.fw:system/vendor/firmware/a330_pfp.fw \
-    vendor/zuk/ham/proprietary/vendor/firmware/a330_pm4.fw:system/vendor/firmware/a330_pm4.fw \
-    vendor/zuk/ham/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:system/vendor/firmware/cpp_firmware_v1_1_1.fw \
-    vendor/zuk/ham/proprietary/vendor/firmware/cpp_firmware_v1_1_6.fw:system/vendor/firmware/cpp_firmware_v1_1_6.fw \
-    vendor/zuk/ham/proprietary/vendor/firmware/cpp_firmware_v1_2_0.fw:system/vendor/firmware/cpp_firmware_v1_2_0.fw \
-    vendor/zuk/ham/proprietary/vendor/firmware/cpp_firmware_v1_4_0.fw:system/vendor/firmware/cpp_firmware_v1_4_0.fw \
-    vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_ATT-VoLTE.mbn:system/etc/firmware/mbn_ota/mcfg_sw_ATT-VoLTE.mbn \
-    vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_CMCC_CSFB_DSDS_Commercial_Volte.mbn:system/etc/firmware/mbn_ota/mcfg_sw_CMCC_CSFB_DSDS_Commercial_Volte.mbn \
-    vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_CU_OpenMkt-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_CU_OpenMkt-Commercial.mbn \
-    vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_OEM_Overseas-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_OEM_Overseas-Commercial.mbn \
-    vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_Reliance-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_Reliance-Commercial.mbn \
-    vendor/zuk/ham/proprietary/vendor/firmware/mbn_ota/mcfg_sw_TMO-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_TMO-Commercial.mbn \
-    vendor/zuk/ham/proprietary/vendor/firmware/venus.b00:system/vendor/firmware/venus.b00 \
-    vendor/zuk/ham/proprietary/vendor/firmware/venus.b01:system/vendor/firmware/venus.b01 \
-    vendor/zuk/ham/proprietary/vendor/firmware/venus.b02:system/vendor/firmware/venus.b02 \
-    vendor/zuk/ham/proprietary/vendor/firmware/venus.b03:system/vendor/firmware/venus.b03 \
-    vendor/zuk/ham/proprietary/vendor/firmware/venus.b04:system/vendor/firmware/venus.b04 \
-    vendor/zuk/ham/proprietary/vendor/firmware/venus.mbn:system/vendor/firmware/venus.mbn \
-    vendor/zuk/ham/proprietary/vendor/firmware/venus.mdt:system/vendor/firmware/venus.mdt \
+    vendor/zuk/ham/proprietary/vendor/bin/imscmservice:system/vendor/bin/imscmservice \
+    vendor/zuk/ham/proprietary/vendor/bin/imsdatadaemon:system/vendor/bin/imsdatadaemon \
+    vendor/zuk/ham/proprietary/vendor/bin/imsqmidaemon:system/vendor/bin/imsqmidaemon \
+    vendor/zuk/ham/proprietary/vendor/bin/ims_rtp_daemon:system/vendor/bin/ims_rtp_daemon \
+    vendor/zuk/ham/proprietary/vendor/bin/xtwifi-inet-agent:system/vendor/bin/xtwifi-inet-agent \
     vendor/zuk/ham/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/zuk/ham/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/zuk/ham/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -81,6 +115,25 @@ PRODUCT_COPY_FILES += \
     vendor/zuk/ham/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/zuk/ham/proprietary/vendor/lib/hw/sensors.msm8974.so:system/vendor/lib/hw/sensors.msm8974.so \
     vendor/zuk/ham/proprietary/vendor/lib/hw/camera.vendor.msm8974.so:system/lib/hw/camera.vendor.msm8974.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-imsrcscmclient.so:system/vendor/lib/lib-imsrcscmclient.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-imsrcscmservice.so:system/vendor/lib/lib-imsrcscmservice.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-imsrcscm.so:system/vendor/lib/lib-imsrcscm.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-imsrcs.so:system/vendor/lib/lib-imsrcs.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-imss.so:system/vendor/lib/lib-imss.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-imsvt.so:system/vendor/lib/lib-imsvt.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-rcsimssjni.so:system/vendor/lib/lib-rcsimssjni.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-rcsjni.so:system/vendor/lib/lib-rcsjni.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
+    vendor/zuk/ham/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
+    vendor/zuk/ham/proprietary/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so \
     vendor/zuk/ham/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/zuk/ham/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/zuk/ham/proprietary/vendor/lib/libstlport.so:system/vendor/lib/libstlport.so \
@@ -133,7 +186,7 @@ PRODUCT_COPY_FILES += \
     vendor/zuk/ham/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_video_hd.so:system/vendor/lib/libchromatix_ov8865_q8v18a_video_hd.so \
     vendor/zuk/ham/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_zsl.so:system/vendor/lib/libchromatix_ov8865_q8v18a_zsl.so \
     vendor/zuk/ham/proprietary/vendor/lib/libchromatix_ov8865_sunny_common.so:system/vendor/lib/libchromatix_ov8865_sunny_common.so \
-    vendor/zuk/ham/proprietary/vendor/lib/libchromatix_ov8865_sunny_default_video.so:system/vendor/lib/libchromatix_ov8865_sunny_default_video.so \
+    vendor/zuk/ham/proprietary/vendor/lib/libchromatix_ov8865_sunny_default_video.so:system/vendor/lib/libchromatix_ov8865_sunny_default_video.so \   
     vendor/zuk/ham/proprietary/vendor/lib/libchromatix_ov8865_sunny_hfr_120fps.so:system/vendor/lib/libchromatix_ov8865_sunny_hfr_120fps.so \
     vendor/zuk/ham/proprietary/vendor/lib/libchromatix_ov8865_sunny_hfr_60fps.so:system/vendor/lib/libchromatix_ov8865_sunny_hfr_60fps.so \
     vendor/zuk/ham/proprietary/vendor/lib/libchromatix_ov8865_sunny_hfr_90fps.so:system/vendor/lib/libchromatix_ov8865_sunny_hfr_90fps.so \
@@ -142,7 +195,10 @@ PRODUCT_COPY_FILES += \
     vendor/zuk/ham/proprietary/vendor/lib/libchromatix_ov8865_sunny_snapshot.so:system/vendor/lib/libchromatix_ov8865_sunny_snapshot.so \
     vendor/zuk/ham/proprietary/vendor/lib/libchromatix_ov8865_sunny_video_hd.so:system/vendor/lib/libchromatix_ov8865_sunny_video_hd.so \
     vendor/zuk/ham/proprietary/vendor/lib/libchromatix_ov8865_sunny_zsl.so:system/vendor/lib/libchromatix_ov8865_sunny_zsl.so \
+    vendor/zuk/ham/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/zuk/ham/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
+    vendor/zuk/ham/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
+    vendor/zuk/ham/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
     vendor/zuk/ham/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/zuk/ham/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
     vendor/zuk/ham/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
@@ -157,6 +213,8 @@ PRODUCT_COPY_FILES += \
     vendor/zuk/ham/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/zuk/ham/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/zuk/ham/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+    vendor/zuk/ham/proprietary/vendor/lib/libimscamera_jni.so:system/vendor/lib/libimscamera_jni.so \
+    vendor/zuk/ham/proprietary/vendor/lib/libimsmedia_jni.so:system/vendor/lib/libimsmedia_jni.so \
     vendor/zuk/ham/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/zuk/ham/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/zuk/ham/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
@@ -219,6 +277,7 @@ PRODUCT_COPY_FILES += \
     vendor/zuk/ham/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/zuk/ham/proprietary/vendor/lib/libril-qc-ltedirectdisc.so:system/vendor/lib/libril-qc-ltedirectdisc.so \
     vendor/zuk/ham/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
+    vendor/zuk/ham/proprietary/vendor/lib/librcc.so:system/vendor/lib/librcc.so \
     vendor/zuk/ham/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/zuk/ham/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/zuk/ham/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
@@ -238,6 +297,7 @@ PRODUCT_COPY_FILES += \
     vendor/zuk/ham/proprietary/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so \
     vendor/zuk/ham/proprietary/vendor/lib/libwcnss_qmi.so:system/vendor/lib/libwcnss_qmi.so \
     vendor/zuk/ham/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+    vendor/zuk/ham/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
     vendor/zuk/ham/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/zuk/ham/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/zuk/ham/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
@@ -245,6 +305,12 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libwpa_qmi_eap_proxy \
+    QtiTelephonyService \
     TimeService \
+    CNEService \
     shutdownlistener \
-    qcrilmsgtunnel
+    qcrilmsgtunnel \
+    ims \
+    imssettings \
+    imscmlibrary \
+    qcrilhook
