@@ -75,7 +75,6 @@ PRODUCT_COPY_FILES += \
     vendor/zuk/ham/proprietary/vendor/lib/hw/camera.vendor.msm8974.so:system/lib/hw/camera.vendor.msm8974.so \
     vendor/zuk/ham/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/zuk/ham/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
-    vendor/zuk/ham/proprietary/vendor/lib/libprotobuf-cpp-N.so:system/vendor/lib/libprotobuf-cpp-N.so \
     vendor/zuk/ham/proprietary/vendor/lib/libprotobuf-cpp-haxx.so:system/vendor/lib/libprotobuf-cpp-haxx.so \
     vendor/zuk/ham/proprietary/vendor/lib/libstlport.so:system/vendor/lib/libstlport.so \
     vendor/zuk/ham/proprietary/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so \
